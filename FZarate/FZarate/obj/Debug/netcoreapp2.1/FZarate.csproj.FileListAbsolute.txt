@@ -1,0 +1,11 @@
+C:\Users\Videojuegos\Desktop\FZarate\FZarate\bin\Debug\netcoreapp2.1\FZarate.deps.json
+C:\Users\Videojuegos\Desktop\FZarate\FZarate\bin\Debug\netcoreapp2.1\FZarate.runtimeconfig.json
+C:\Users\Videojuegos\Desktop\FZarate\FZarate\bin\Debug\netcoreapp2.1\FZarate.runtimeconfig.dev.json
+C:\Users\Videojuegos\Desktop\FZarate\FZarate\bin\Debug\netcoreapp2.1\FZarate.dll
+C:\Users\Videojuegos\Desktop\FZarate\FZarate\bin\Debug\netcoreapp2.1\FZarate.pdb
+C:\Users\Videojuegos\Desktop\FZarate\FZarate\obj\Debug\netcoreapp2.1\FZarate.csprojAssemblyReference.cache
+C:\Users\Videojuegos\Desktop\FZarate\FZarate\obj\Debug\netcoreapp2.1\FZarate.csproj.CoreCompileInputs.cache
+C:\Users\Videojuegos\Desktop\FZarate\FZarate\obj\Debug\netcoreapp2.1\FZarate.AssemblyInfoInputs.cache
+C:\Users\Videojuegos\Desktop\FZarate\FZarate\obj\Debug\netcoreapp2.1\FZarate.AssemblyInfo.cs
+C:\Users\Videojuegos\Desktop\FZarate\FZarate\obj\Debug\netcoreapp2.1\FZarate.dll
+C:\Users\Videojuegos\Desktop\FZarate\FZarate\obj\Debug\netcoreapp2.1\FZarate.pdb
