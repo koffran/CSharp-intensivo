@@ -28,40 +28,38 @@ namespace FZarate
              Console.WriteLine("La circunferencia es: " + circunferencia.ToString() + "\nEl area es : " + area.ToString()); //SIEMPRE TOSTRING() como buena practica*/
 
             //Calcule raices o soluciones para una ecuacion cuadratica (ax2 + bx + c = 0) El usuario ingresa a, b y c.
+
             Console.WriteLine("EScriba el numero A : ");
-            float a = float.Parse(Console.ReadLine());
-            Console.WriteLine("EScriba el numero B : ");
-            float b = float.Parse(Console.ReadLine());
-            Console.WriteLine("EScriba el numero C : ");
-            float c = float.Parse(Console.ReadLine());
+             float a = float.Parse(Console.ReadLine());
+             Console.WriteLine("EScriba el numero B : ");
+             float b = float.Parse(Console.ReadLine());
+             Console.WriteLine("EScriba el numero C : ");
+             float c = float.Parse(Console.ReadLine());
 
-            double cuadrado = b * b - 4 * a * c;
-            Console.WriteLine("El cuadrado es : " + cuadrado.ToString());
-            if(cuadrado >= 0)
-            {
-                float raiz = (float)Math.Sqrt(cuadrado);
-                Console.WriteLine("La raiz es : " + raiz.ToString());
-                float superior1 = -b + raiz;
-                float superior2 = -b - raiz;
+             double radicando = b * b - 4 * a * c;
 
-                if (2 * a != 0)
-                {
-                    float x1 = superior1 / 2 * a;
-                    float x2 = superior2 / 2 * a;
-                    Console.WriteLine("X1 es : " + x1.ToString() + "\nX2 es : " + x2.ToString());
-                }
-                else
-                {
-                    Console.WriteLine("No se puede dividir por cero");
-                }
-            }
-            else
-            {
-                Console.WriteLine("No se puede sacar la raiz de un negativo");
-            }
-            
+             if(radicando >= 0)
+             {
+                 float dis = (float)Math.Sqrt(radicando);
+                 float dividendo1 = -b + dis;
+                 float dividendo2 = -b - dis;
+                 float divisor = 2 * a;
 
-          
+                 if (divisor != 0)
+                 {
+                     float x1 = dividendo1 / divisor;
+                     float x2 = dividendo2 / divisor;
+                     Console.WriteLine("X1 es : " + x1.ToString() + "\nX2 es : " + x2.ToString());
+                 }
+                 else
+                 {
+                     Console.WriteLine("No se puede dividir por cero");
+                 }
+             }
+             else
+             {
+                 Console.WriteLine("No se puede sacar la raiz de un negativo");
+             }
             
 
             Console.WriteLine("\nPresione Enter para cerrar el programa");
