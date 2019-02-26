@@ -1,0 +1,11 @@
+C:\Users\Videojuegos\Desktop\Franco Z\Clase 4\Clase 4\bin\Debug\netcoreapp2.1\Clase 4.deps.json
+C:\Users\Videojuegos\Desktop\Franco Z\Clase 4\Clase 4\bin\Debug\netcoreapp2.1\Clase 4.runtimeconfig.json
+C:\Users\Videojuegos\Desktop\Franco Z\Clase 4\Clase 4\bin\Debug\netcoreapp2.1\Clase 4.runtimeconfig.dev.json
+C:\Users\Videojuegos\Desktop\Franco Z\Clase 4\Clase 4\bin\Debug\netcoreapp2.1\Clase 4.dll
+C:\Users\Videojuegos\Desktop\Franco Z\Clase 4\Clase 4\bin\Debug\netcoreapp2.1\Clase 4.pdb
+C:\Users\Videojuegos\Desktop\Franco Z\Clase 4\Clase 4\obj\Debug\netcoreapp2.1\Clase 4.csprojAssemblyReference.cache
+C:\Users\Videojuegos\Desktop\Franco Z\Clase 4\Clase 4\obj\Debug\netcoreapp2.1\Clase 4.csproj.CoreCompileInputs.cache
+C:\Users\Videojuegos\Desktop\Franco Z\Clase 4\Clase 4\obj\Debug\netcoreapp2.1\Clase 4.AssemblyInfoInputs.cache
+C:\Users\Videojuegos\Desktop\Franco Z\Clase 4\Clase 4\obj\Debug\netcoreapp2.1\Clase 4.AssemblyInfo.cs
+C:\Users\Videojuegos\Desktop\Franco Z\Clase 4\Clase 4\obj\Debug\netcoreapp2.1\Clase 4.dll
+C:\Users\Videojuegos\Desktop\Franco Z\Clase 4\Clase 4\obj\Debug\netcoreapp2.1\Clase 4.pdb
