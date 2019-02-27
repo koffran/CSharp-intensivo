@@ -1,0 +1,11 @@
+C:\Users\Videojuegos\source\repos\Clase 4 Arrays\Clase 4 Arrays\bin\Debug\netcoreapp2.1\Clase 4 Arrays.deps.json
+C:\Users\Videojuegos\source\repos\Clase 4 Arrays\Clase 4 Arrays\bin\Debug\netcoreapp2.1\Clase 4 Arrays.runtimeconfig.json
+C:\Users\Videojuegos\source\repos\Clase 4 Arrays\Clase 4 Arrays\bin\Debug\netcoreapp2.1\Clase 4 Arrays.runtimeconfig.dev.json
+C:\Users\Videojuegos\source\repos\Clase 4 Arrays\Clase 4 Arrays\bin\Debug\netcoreapp2.1\Clase 4 Arrays.dll
+C:\Users\Videojuegos\source\repos\Clase 4 Arrays\Clase 4 Arrays\bin\Debug\netcoreapp2.1\Clase 4 Arrays.pdb
+C:\Users\Videojuegos\source\repos\Clase 4 Arrays\Clase 4 Arrays\obj\Debug\netcoreapp2.1\Clase 4 Arrays.csprojAssemblyReference.cache
+C:\Users\Videojuegos\source\repos\Clase 4 Arrays\Clase 4 Arrays\obj\Debug\netcoreapp2.1\Clase 4 Arrays.csproj.CoreCompileInputs.cache
+C:\Users\Videojuegos\source\repos\Clase 4 Arrays\Clase 4 Arrays\obj\Debug\netcoreapp2.1\Clase 4 Arrays.AssemblyInfoInputs.cache
+C:\Users\Videojuegos\source\repos\Clase 4 Arrays\Clase 4 Arrays\obj\Debug\netcoreapp2.1\Clase 4 Arrays.AssemblyInfo.cs
+C:\Users\Videojuegos\source\repos\Clase 4 Arrays\Clase 4 Arrays\obj\Debug\netcoreapp2.1\Clase 4 Arrays.dll
+C:\Users\Videojuegos\source\repos\Clase 4 Arrays\Clase 4 Arrays\obj\Debug\netcoreapp2.1\Clase 4 Arrays.pdb
