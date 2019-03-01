@@ -1,0 +1,11 @@
+C:\Users\Videojuegos\Desktop\Franco Z\Funciones ejercicios\Funciones ejercicios\obj\Debug\netcoreapp2.1\Funciones ejercicios.csprojAssemblyReference.cache
+C:\Users\Videojuegos\Desktop\Franco Z\Funciones ejercicios\Funciones ejercicios\obj\Debug\netcoreapp2.1\Funciones ejercicios.csproj.CoreCompileInputs.cache
+C:\Users\Videojuegos\Desktop\Franco Z\Funciones ejercicios\Funciones ejercicios\obj\Debug\netcoreapp2.1\Funciones ejercicios.AssemblyInfoInputs.cache
+C:\Users\Videojuegos\Desktop\Franco Z\Funciones ejercicios\Funciones ejercicios\obj\Debug\netcoreapp2.1\Funciones ejercicios.AssemblyInfo.cs
+C:\Users\Videojuegos\Desktop\Franco Z\Funciones ejercicios\Funciones ejercicios\bin\Debug\netcoreapp2.1\Funciones ejercicios.deps.json
+C:\Users\Videojuegos\Desktop\Franco Z\Funciones ejercicios\Funciones ejercicios\bin\Debug\netcoreapp2.1\Funciones ejercicios.runtimeconfig.json
+C:\Users\Videojuegos\Desktop\Franco Z\Funciones ejercicios\Funciones ejercicios\bin\Debug\netcoreapp2.1\Funciones ejercicios.runtimeconfig.dev.json
+C:\Users\Videojuegos\Desktop\Franco Z\Funciones ejercicios\Funciones ejercicios\bin\Debug\netcoreapp2.1\Funciones ejercicios.dll
+C:\Users\Videojuegos\Desktop\Franco Z\Funciones ejercicios\Funciones ejercicios\bin\Debug\netcoreapp2.1\Funciones ejercicios.pdb
+C:\Users\Videojuegos\Desktop\Franco Z\Funciones ejercicios\Funciones ejercicios\obj\Debug\netcoreapp2.1\Funciones ejercicios.dll
+C:\Users\Videojuegos\Desktop\Franco Z\Funciones ejercicios\Funciones ejercicios\obj\Debug\netcoreapp2.1\Funciones ejercicios.pdb
