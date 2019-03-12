@@ -6,6 +6,36 @@ using System.Threading.Tasks;
 
 namespace Trabajo_final
 {
+    public class Armadura
+    {
+        protected int proteccion;
+
+        public Armadura()
+        {
+            proteccion = 15;
+        }
+
+        public Armadura(int p)
+        {
+            proteccion = p;
+        }
+        ~Armadura() { }
+
+        public virtual int Proteccion
+        {
+            get
+            { return proteccion; }
+        }
+ 
+    }
+
+    public class Liviana : Armadura
+    {
+        public Liviana() : base() { proteccion = 5; }
+        ~Liviana() { }
+        public override int Proteccion => base.Proteccion;
+    }
+
     public class Caballero
     {
         //CONSTRUCTORES Y DESTRUCTOR
@@ -38,6 +68,7 @@ namespace Trabajo_final
 
         //PROPIEDADES
         protected uint salud;
+        protected Armadura armor;
     }
 
     class Program
