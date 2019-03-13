@@ -36,6 +36,34 @@ namespace Trabajo_final
         public override int Proteccion => base.Proteccion;
     }
 
+    public class Mediana : Armadura
+    {
+        public Mediana() : base() { proteccion = 10; }
+        ~Mediana() { }
+        public override int Proteccion => base.Proteccion;
+    }
+
+    public class Arquero: Caballero
+    {
+        public Arquero() : base() { flechas = 8; }
+        public Arquero(uint s, uint f) : base(s)
+        {
+            flechas = f;
+            armor = new Mediana();
+        }
+        ~Arquero() { }
+
+        public override void Atacar(uint s,Caballero enemigo)
+        {
+            enemigo.RecibirDanio(s);
+            Console.WriteLine("Se dispara una flecha y le realiza "+s+ " puntos de daño al enemigo");
+            flechas--;
+        }
+
+        private uint flechas;
+        
+    }
+
     public class Caballero
     {
         //CONSTRUCTORES Y DESTRUCTOR
@@ -52,9 +80,18 @@ namespace Trabajo_final
             enemigo.RecibirDanio(s);
         }
        
-        public void RecibirDanio(uint s)
+        public void RecibirDanio(uint s) //COMPARAR EL DANIO CON LA ARMADURA.VIRTUAL?
         {
-            salud -= s;
+            //armor.Proteccion;
+            if(s > armor.Proteccion)
+            {
+                salud -= s;
+            }
+            else
+            {
+                Console.WriteLine("No se realizo ataque");
+            }
+            
         }
         public void Morir()
         {
@@ -65,10 +102,10 @@ namespace Trabajo_final
             get
                 { return salud; }
         }
-
+        protected Armadura armor;
         //PROPIEDADES
         protected uint salud;
-        protected Armadura armor;
+        
     }
 
     class Program
