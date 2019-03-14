@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabajo_final
 {
-    public class Armadura
+    /*public class Armadura
     {
         protected int proteccion;
 
@@ -26,103 +26,32 @@ namespace Trabajo_final
             get
             { return proteccion; }
         }
- 
     }
-
     public class Liviana : Armadura
     {
         public Liviana() : base() { proteccion = 5; }
         ~Liviana() { }
         public override int Proteccion => base.Proteccion;
     }
-
     public class Mediana : Armadura
     {
         public Mediana() : base() { proteccion = 10; }
         ~Mediana() { }
         public override int Proteccion => base.Proteccion;
-    }
-
-    public class Arquero: Caballero
-    {
-        public Arquero() : base() { flechas = 8; }
-        public Arquero(uint s, uint f) : base(s)
-        {
-            flechas = f;
-            armor = new Mediana();
-        }
-        ~Arquero() { }
-
-        public override void Atacar(uint s,Caballero enemigo)
-        {
-            enemigo.RecibirDanio(s);
-            Console.WriteLine("Se dispara una flecha y le realiza "+s+ " puntos de daño al enemigo");
-            flechas--;
-        }
-
-        private uint flechas;
-        
-    }
-
-    public class Caballero
-    {
-        //CONSTRUCTORES Y DESTRUCTOR
-        public Caballero() { salud = 100; }
-        public Caballero(uint s)
-        {
-            salud = s;
-        }
-        ~Caballero() { Console.WriteLine("Caballero eliminado"); }
-
-        //METODOS
-        public virtual void Atacar(uint s, Caballero enemigo)
-        {
-            enemigo.RecibirDanio(s);
-        }
-       
-        public void RecibirDanio(uint s) //COMPARAR EL DANIO CON LA ARMADURA.VIRTUAL?
-        {
-            //armor.Proteccion;
-            if(s > armor.Proteccion)
-            {
-                salud -= s;
-            }
-            else
-            {
-                Console.WriteLine("No se realizo ataque");
-            }
-            
-        }
-        public void Morir()
-        {
-            salud =0;
-        }
-        public uint Salud
-        {
-            get
-                { return salud; }
-        }
-        protected Armadura armor;
-        //PROPIEDADES
-        protected uint salud;
-        
-    }
+    }*/
 
     class Program
     {
         static void Main(string[] args)
         {
-            uint atqCaballero;//2d4
+            // uint atqCaballero;//2d4
             uint turno, atacante, defensor;
 
             Caballero[] Bando1 = new Caballero[30];
             Caballero[] Bando2 = new Caballero[30];
 
-            for (int i = 0; i < 30; i++)
-            {
-                Bando1[i] = new Caballero();
-                Bando2[i] = new Caballero(80);
-            }
+            llenarBando(Bando1);
+            llenarBando(Bando2);
 
             Bandos_Listar(Bando1,Bando2);
 
@@ -141,26 +70,29 @@ namespace Trabajo_final
                     atacante = (uint)rnd2.Next(0,30); //SE ELIGE AL AZAR QUE GUERRERO ATACA
                     defensor = (uint)rnd2.Next(0, 30);//SE ELIGE AL AZAR QUE GUERRERO DEFIENDE
 
-                    while (Bando2[defensor].Salud == 0)//VERIFICO QUE EL DEFENSOR ESTE VIVO PARA NO ATACAR A LOS MUERTOS
+                    while (!Bando2[defensor].EstaVivo())//VERIFICO QUE EL DEFENSOR ESTE VIVO PARA NO ATACAR A LOS MUERTOS
                     {
                         defensor = (uint)rnd2.Next(0, 30);
                     }
+                    while (!Bando1[atacante].EstaVivo())//VERIFICO QUE EL DEFENSOR ESTE VIVO PARA NO ATACAR A LOS MUERTOS
+                    {
+                        atacante = (uint)rnd2.Next(0, 30);
+                    }
 
                     Console.WriteLine("El caballero " + atacante + " del bando 1 ataca al caballero " + defensor + " del bando 2");
-                     atqCaballero = (uint)calcTirada(2, 40);
-                     Console.WriteLine("Y le realiza " + atqCaballero + " puntos de daño");
-
-                    if ( Bando2[defensor].Salud <= atqCaballero) // SI LA SALUD ES MENOR AL ATAQUE, MATO AL DEFENSOR
+                     //atqCaballero = (uint)calcTirada(2, 40);
+                    //Console.WriteLine("Y le realiza " + atqCaballero + " puntos de daño");
+                    if (Bando2[defensor].Salud != 0) // REALIZO EL ATAQUE, TUVE QUE VALIDAR PORQUE SINO SEGUIA ATACANDO AUNQUE ESTEN MUERTOS.
                     {
-                         Bando2[defensor].Morir();
-                        Console.WriteLine("El guerrero " + defensor + " del bando 2 murio");
+                        Bando1[atacante].Turno(Bando2[defensor]);
+                    }
+                    if ( !Bando2[defensor].EstaVivo()) // SI LA SALUD ES MENOR AL ATAQUE, MATO AL DEFENSOR
+                    {
+                        
                          tam2--;
                     }
 
-                    if (Bando2[defensor].Salud != 0) // REALIZO EL ATAQUE, TUVE QUE VALIDAR PORQUE SINO SEGUIA ATACANDO AUNQUE ESTEN MUERTOS.
-                     {
-                        Bando1[atacante].Atacar(atqCaballero, Bando2[defensor]);
-                    } 
+                    
        }
        else //ATACA EL BANDO 2
        {
@@ -168,26 +100,27 @@ namespace Trabajo_final
            atacante = (uint)rnd2.Next(0, 30);
            defensor = (uint)rnd2.Next(0, 30);
 
-            while (Bando1[defensor].Salud == 0)
-            {
-                defensor = (uint)rnd2.Next(0, 30);
-            }
+                    while (!Bando1[defensor].EstaVivo())//VERIFICO QUE EL DEFENSOR ESTE VIVO PARA NO ATACAR A LOS MUERTOS
+                    {
+                        defensor = (uint)rnd2.Next(0, 30);
+                    }
+                    while (!Bando2[atacante].EstaVivo())//VERIFICO QUE EL DEFENSOR ESTE VIVO PARA NO ATACAR A LOS MUERTOS
+                    {
+                        atacante = (uint)rnd2.Next(0, 30);
+                    }
 
-           Console.WriteLine("El caballero " + atacante + " del bando 2 ataca al caballero " + defensor + " del bando 1");
-           atqCaballero = (uint)calcTirada(2, 15);
-           Console.WriteLine("Y le realiza " + atqCaballero + " puntos de daño");
-
-            if (Bando1[defensor].Salud <= atqCaballero) // SI LA SALUD ES MENOR AL ATAQUE, MATO AL DEFENSOR
-            {
-                Bando1[defensor].Morir();
-                Console.WriteLine("El guerrero " + defensor + " del bando 1 murio");
-                tam1--;
-            }
-
+                    Console.WriteLine("El caballero " + atacante + " del bando 2 ataca al caballero " + defensor + " del bando 1");
+            //atqCaballero = (uint)calcTirada(2, 15);
+                    //Console.WriteLine("Y le realiza " + atqCaballero + " puntos de daño");
             if (Bando1[defensor].Salud != 0) // REALIZO EL ATAQUE, TUVE QUE VALIDAR PORQUE SINO SEGUIA ATACANDO AUNQUE ESTEN MUERTOS.
             {
-                Bando2[atacante].Atacar(atqCaballero, Bando1[defensor]);
+                Bando2[atacante].Turno(Bando1[defensor]);
             }
+
+            if (!Bando1[defensor].EstaVivo()) // SI LA SALUD ES MENOR AL ATAQUE, MATO AL DEFENSOR
+            {
+                tam1--;
+            }      
        }
                 Console.ReadKey();
                 Console.Clear();
@@ -205,8 +138,29 @@ namespace Trabajo_final
             {
                 Console.WriteLine("\n\n\t\t\tGano el bando 2");
             }
+            
 
             Console.ReadKey();     
+        }
+
+        public static void llenarBando(Caballero[] bando)
+        {
+            Random rnd = new Random();
+            for (int i = 0; i < 30; i++)
+            {
+                switch(rnd.Next(0,2))
+                {
+                    case 0:
+                        bando[i] = new Caballero();
+                        break;
+                    case 1:
+                        bando[i] = new Arquero();
+                        break;
+                    /*case 2:
+                        Bando[i] = new Mago();
+                        break;*/
+                } 
+            }
         }
 
         public static void Bandos_Listar(Caballero[] bando1, Caballero[] bando2)
@@ -214,7 +168,7 @@ namespace Trabajo_final
             Console.WriteLine("\tBando 1 \t\t\t Bando 2");
             for (int i = 0; i < 30; i++)
             {
-                Console.WriteLine("\t" + "Caballero " + i + " Salud:" + bando1[i].Salud + "\t\t\tCaballero " + i + " Salud:" + bando2[i].Salud);
+                Console.WriteLine("\t" + bando1[i].Nombre+ " "  + i + " Salud:" + bando1[i].Salud + "\t\t\t"+ bando2[i].Nombre +" " + i + " Salud:" + bando2[i].Salud);
             }
         }
 

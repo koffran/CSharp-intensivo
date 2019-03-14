@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arquero.cs" />
+    <Compile Include="Caballero.cs" />
+    <Compile Include="Hechizo.cs" />
+    <Compile Include="Mago.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
