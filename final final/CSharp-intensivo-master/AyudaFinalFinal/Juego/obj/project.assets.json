@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v2.1": []
+  },
+  "packageFolders": {
+    "C:\\Users\\Koff\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Koff\\Desktop\\Programacion\\C# Intensivo\\final final\\CSharp-intensivo-master\\AyudaFinalFinal\\Juego\\Juego.csproj",
+      "projectName": "Juego",
+      "projectPath": "C:\\Users\\Koff\\Desktop\\Programacion\\C# Intensivo\\final final\\CSharp-intensivo-master\\AyudaFinalFinal\\Juego\\Juego.csproj",
+      "packagesPath": "C:\\Users\\Koff\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Koff\\Desktop\\Programacion\\C# Intensivo\\final final\\CSharp-intensivo-master\\AyudaFinalFinal\\Juego\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Koff\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp2.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "netcoreapp2.1": {}
+    }
+  }
+}
