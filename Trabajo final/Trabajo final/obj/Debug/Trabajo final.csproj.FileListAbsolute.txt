@@ -19,3 +19,7 @@ C:\Users\Koff\Desktop\Programacion\C# Intensivo\final final\CSharp-intensivo-mas
 C:\Users\Koff\Desktop\Programacion\C# Intensivo\final final\CSharp-intensivo-master\Trabajo final\Trabajo final\obj\Debug\Trabajo final.csproj.CoreCompileInputs.cache
 C:\Users\Koff\Desktop\Programacion\C# Intensivo\final final\CSharp-intensivo-master\Trabajo final\Trabajo final\obj\Debug\Trabajo final.exe
 C:\Users\Koff\Desktop\Programacion\C# Intensivo\final final\CSharp-intensivo-master\Trabajo final\Trabajo final\obj\Debug\Trabajo final.pdb
+C:\Users\frane\Desktop\final final\CSharp-intensivo-master\CSharp-intensivo-master\final final\CSharp-intensivo-master\Trabajo final\Trabajo final\obj\Debug\Trabajo final.csprojAssemblyReference.cache
+C:\Users\frane\Desktop\final final\CSharp-intensivo-master\CSharp-intensivo-master\final final\CSharp-intensivo-master\Trabajo final\Trabajo final\obj\Debug\Trabajo final.csproj.CoreCompileInputs.cache
+C:\Users\frane\Desktop\final final\CSharp-intensivo-master\CSharp-intensivo-master\final final\CSharp-intensivo-master\Trabajo final\Trabajo final\obj\Debug\Trabajo final.exe
+C:\Users\frane\Desktop\final final\CSharp-intensivo-master\CSharp-intensivo-master\final final\CSharp-intensivo-master\Trabajo final\Trabajo final\obj\Debug\Trabajo final.pdb
